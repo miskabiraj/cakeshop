@@ -1,0 +1,5 @@
+@include('cakeadmin.travellayout.header')
+@include('cakeadmin.travellayout.sidebar')
+@include('cakeadmin.travellayout.error')
+@yield('content')
+@include('cakeadmin.travellayout.footer')

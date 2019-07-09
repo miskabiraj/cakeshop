@@ -1,0 +1,6 @@
+@include('cake.cakelayout.header')
+@include('cake.cakelayout.sidebar')
+@include('cake.cakelayout.error')
+@yield('tittle')
+@yield('content')
+@include('cake.cakelayout.fooder')
