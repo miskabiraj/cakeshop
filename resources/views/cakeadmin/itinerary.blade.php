@@ -17,7 +17,7 @@ AddItinerary
                     <div class="col-sm-6">
                         <div class="tile">
                             <div class="form-group">
-                                <form action="" method="POST" enctype="multipart/form-data">
+                                <form action="{{route('itinerary_insert')}}" method="POST" enctype="multipart/form-data">
                                     {{csrf_field()}}
                                     <label class="control-label-form">Select Category</label>
 {{--                                    <select name="category[]" class="form-control form-control-lg" required="" multiple>--}}

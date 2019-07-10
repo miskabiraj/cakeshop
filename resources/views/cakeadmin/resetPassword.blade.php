@@ -1,4 +1,4 @@
-@extends('traveladmin.travellayout.master')
+@extends('cakeadmin.travellayout.master')
 
 @section('app-title')
 Reset Password

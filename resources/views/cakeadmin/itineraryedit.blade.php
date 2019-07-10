@@ -1,4 +1,4 @@
-@extends('traveladmin.travellayout.master')
+@extends('cakeadmin.travellayout.master')
 @section('app-title')
 EditItinerary
 @stop
@@ -17,16 +17,16 @@ EditItinerary
                                 <form action="{{ url('itineraryupdate').'/'.$details->id}}" method="POST" enctype="multipart/form-data">
                                     {{csrf_field()}}
                                     <label class="control-label-form">Select Category</label>
-                                    <select name="category[]" class="form-control form-control-lg" required multiple>
-                                        @foreach($catagories as $category)
-                                        <option value="{{$category->id}}"
-                                                @foreach($details->multicatagories as $multicatagoryData)
-                                            {{ $category->id==$multicatagoryData->category_id?'selected':'' }}
-                                            @endforeach
-                                            
-                                            >{{$category->category}}</option>
-                                        @endforeach
-                                    </select><br>
+{{--                                    <select name="category[]" class="form-control form-control-lg" required multiple>--}}
+{{--                                        @foreach($catagories as $category)--}}
+{{--                                        <option value="{{$category->id}}"--}}
+{{--                                                @foreach($details->multicatagories as $multicatagoryData)--}}
+{{--                                            {{ $category->id==$multicatagoryData->category_id?'selected':'' }}--}}
+{{--                                            @endforeach--}}
+{{--                                            --}}
+{{--                                            >{{$category->category}}</option>--}}
+{{--                                        @endforeach--}}
+{{--                                    </select><br>--}}
                                     <label class="control-label-form">Select Category</label>
                                     <br><br>
                                     Domestic <input class="form-control form-control-lg" id="inputLarge" name="type"
@@ -111,18 +111,18 @@ EditItinerary
         </form>
     </div>
     <div class="row">
-        @foreach($details->images as $image)
-        <div class="tile">
-            <div class="embed-responsive">
-                <center><img class="img" src="{{ url($image->image_name) }}" alt="gallery"></center><br>
-                <form action="{{ url('/imagedelete').'/'.$image->id}}" method="POST">
-                    {{ csrf_field() }}
-                    <input type="hidden" name="_method" value="DELETE">
-                    <button onclick="return confirm('Are you sure?')" class="btn btn-danger">delete</button>
-                </form>
-            </div>
-        </div>
-        @endforeach
+{{--        @foreach($details->images as $image)--}}
+{{--        <div class="tile">--}}
+{{--            <div class="embed-responsive">--}}
+{{--                <center><img class="img" src="{{ url($image->image_name) }}" alt="gallery"></center><br>--}}
+{{--                <form action="{{ url('/imagedelete').'/'.$image->id}}" method="POST">--}}
+{{--                    {{ csrf_field() }}--}}
+{{--                    <input type="hidden" name="_method" value="DELETE">--}}
+{{--                    <button onclick="return confirm('Are you sure?')" class="btn btn-danger">delete</button>--}}
+{{--                </form>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        @endforeach--}}
     </div>
     <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
     <script>

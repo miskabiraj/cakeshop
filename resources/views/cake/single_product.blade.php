@@ -1,5 +1,10 @@
-@include('cake.cakelayout.header')
+@extends('cake.layout.master')
+<!-- End Page title area -->
 
+@section('title')
+    single cake Shop
+
+@section('content')
 
 <div class="single-product-area">
     <div class="zigzag-bottom"></div>
@@ -7,7 +12,7 @@
         <div class="row">
 
 
-            @include('cake.cakelayout.sidebar')
+
 
             <div class="col-md-8">
                 <div class="product-content-right">
@@ -190,5 +195,4 @@
     </div>
 </div>
 
-
-@include('cake.cakelayout.fooder')
+@endsection

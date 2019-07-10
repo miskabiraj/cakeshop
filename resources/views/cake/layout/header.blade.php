@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    @yield('tittle')
+@yield('tittle')
 
-    <!-- Google Fonts -->
+<!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
@@ -87,48 +87,6 @@
             <div class="col-sm-6">
                 <div class="shopping-item">
                     <a href="">Cart - <span class="cart-amunt">$100</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">5</span></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> <!-- End site branding area -->
-
-<div class="mainmenu-area">
-    <div class="container">
-        <div class="row">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="home">Home</a></li>
-
-
-                    <li><a href="#">Category</a></li>
-                    <li><a href="shop">Shop Cake</a></li>
-                    <li><a href="single-product">Single Cake</a></li>
-                    <li><a href="cart">Cart</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="product-big-title-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="product-bit-title text-center">
-                    @yield('tittle')
-{{--                                        <h2>Shopping Cart</h2>--}}
-
                 </div>
             </div>
         </div>

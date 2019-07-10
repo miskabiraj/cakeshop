@@ -1,6 +1,9 @@
-@extends('cake.cakelayout.master')
+@extends('cake.layout.master')
+<!-- End Page title area -->
 
-
+@section('title')
+    Shopp
+@endsection
 @section('content')
 
 <div class="single-product-area">

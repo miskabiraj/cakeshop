@@ -28,6 +28,13 @@ Route::get('/single-product', 'CakeFrontEndController@product')->name('product')
 
 
 
+
+Route::get('/package/{catagory}', 'CakeFrontEndController@PackageCatagoryList');
+
+
+
+
+
 Route::get('/home','CakeController@category')->name('home');
 
 Route::get('/itinerary','CakeController@itinerary')->name('itinerary');

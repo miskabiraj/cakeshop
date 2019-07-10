@@ -53,16 +53,21 @@ class CakeController extends Controller
 
 
     public function itinerary(){
-//      $select=Category::all();
-//      $complementary=Complementaries::all();
-//      return view('cakeadmin.itinerary',compact('select','complementary'));
-        return view('cakeadmin.itinerary');
+      $select=Category::all();
+      $complementary=Complementaries::all();
+      return view('cakeadmin.itinerary',compact('select','complementary'));
+
+//        return view('cakeadmin.itinerary');
     }
 
 
     public function additinerary(request $request){
+
+
+
+
         $this->validate(request(),[
-            'category'=>'required',
+//            'category'=>'required',
             'type'    =>'required',
             'trending'    =>'required',
             'packagename'   =>'required',

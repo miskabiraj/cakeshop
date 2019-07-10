@@ -1,4 +1,4 @@
-@extends('traveladmin.travellayout.master')
+@extends('cakeadmin.travellayout.master')
 @section('app-title')
 ViewItinerary
 @stop
@@ -13,9 +13,9 @@ ViewItinerary
           <tr>
             <th>Category</th>
             <td>
-              @foreach($details->multicatagories as $multicatagory)
-              {{ $multicatagory->CatagoryData->category  }},
-              @endforeach
+{{--              @foreach($details->multicatagories as $multicatagory)--}}
+{{--              {{ $multicatagory->CatagoryData->category  }},--}}
+{{--              @endforeach--}}
             </td>
           </tr>
           <tr>
@@ -76,12 +76,12 @@ ViewItinerary
           </tr>
           <tr>
             <th>Image</th>
-          
+
           <td>
-       @foreach($details->images as $image)
-       
-                  <img  src="{{ url($image->image_name) }}" id="output" alt="No image" class="img"/>
-                    @endforeach
+{{--       @foreach($details->images as $image)--}}
+
+{{--                  <img  src="{{ url($image->image_name) }}" id="output" alt="No image" class="img"/>--}}
+{{--                    @endforeach--}}
           </td>
           </tr>
         </tbody>

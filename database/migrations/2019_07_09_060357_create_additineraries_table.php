@@ -14,7 +14,7 @@ class CreateAdditinerariesTable extends Migration
     public function up()
     {
         Schema::create('additineraries', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->longText('type')->nullable();
             $table->longText('trending')->nullable();
             $table->longText('packagename')->nullable();
